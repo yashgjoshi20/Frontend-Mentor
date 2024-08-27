@@ -1,0 +1,294 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.2s ease;
+}
+
+:root {
+  --pale-blue: hsl(243, 100%, 93%);
+  --grayish-blue: hsl(229, 7%, 55%);
+  --dark-blue: hsl(228, 56%, 26%);
+  --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+p,
+h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+img {
+  width: fit-content;
+  height: fit-content;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  background: var(--very-dark-blue);
+  background-image: url(images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--pale-blue);
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* Container */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container:hover section {
+  transform: translateY(-10px);
+  box-shadow: hsl(228, 44%, 35%) 0px 20px 30px -10px;
+}
+
+/* Files Upload Left */
+.files-upload,
+.storage {
+  width: 100%;
+  transition: 0.6s;
+  box-shadow: hsl(229, 57%, 11%) 0px 20px 30px -10px;
+}
+
+.files-upload {
+  background: var(--dark-blue);
+  padding: 2.8rem 2.5rem;
+  border-radius: 10px 100px 10px 10px;
+}
+
+.files-upload .icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.files-upload .icons div {
+  padding: 15px;
+  background: var(--very-dark-blue);
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.files-upload .icons div:hover {
+  scale: 1.1;
+  background: hsl(230, 40%, 53%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* Storage Right */
+
+.storage {
+  text-align: center;
+  background: var(--dark-blue);
+  border-radius: 10px;
+  padding: 2rem 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+
+.storage .storage-indicator {
+  width: 100%;
+  background: var(--very-dark-blue);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 3px 4px;
+}
+
+.storage .storage-indicator .storage-bar {
+  width: 190px;
+  height: 16px;
+  background: var(--pale-blue);
+  border-radius: 10px;
+  background: rgb(255, 163, 153);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 163, 153, 1) 0%,
+    rgba(255, 77, 151, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: 0.6s;
+}
+
+.storage .storage-indicator .storage-bar::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--pale-blue);
+  z-index: 2;
+  border-radius: 50%;
+  right: 2px;
+}
+
+.storage div:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.storage .storage-remain {
+  background: var(--pale-blue);
+  position: absolute;
+  bottom: -20%;
+  padding: 1rem 1.6rem;
+  border-radius: inherit;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--grayish-blue);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.storage-remain strong {
+  font-size: 2.2rem;
+  color: var(--very-dark-blue);
+}
+
+/* Media Query */
+
+@media (min-width: 768px) and (max-width: 1050px) {
+  .container {
+    width: 500px;
+  }
+
+  .storage .storage-indicator .storage-bar {
+    width: 325px;
+  }
+}
+
+@media (min-width: 1050px) {
+  body {
+    background-image: url(images/bg-desktop.png);
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 25px;
+    transform: translateY(-25%);
+  }
+
+  .files-upload {
+    width: 400px;
+    animation: push 4s;
+    /* transform: rotate(-15deg); */
+  }
+
+  .storage {
+    padding: 3.5rem 2rem 2rem;
+    width: 600px;
+    text-align: left;
+    animation: fall 4s;
+    /* transform: rotate(-5deg); */
+  }
+
+  .storage .storage-indicator .storage-bar {
+    width: 425px;
+  }
+
+  .storage .storage-remain {
+    top: -20%;
+    bottom: unset;
+    left: unset;
+    right: 2rem;
+    transform: none;
+    border-radius: 10px 10px 0px 10px;
+  }
+
+  .storage .storage-remain::before {
+    content: "";
+    position: absolute;
+    border-top: 20px solid var(--pale-blue);
+    border-right: 20px solid var(--pale-blue);
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    bottom: -35px;
+    right: 0;
+  }
+
+  /* This is my first time creating sequential animations where the two animations interact with each other. */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-500%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateX(30%) rotate(195deg);
+  }
+  100% {
+    transform: translateX(0) rotate(unset);
+  }
+}
+
+@keyframes push {
+  0% {
+    transform: translateX(-20000rem);
+  }
+  50% {
+    transform: translateX(6%);
+  }
+  75% {
+    transform: translateX(-25%) rotate(-180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(-15deg);
+  }
+}
+
+/* Attribution / Footer */
+
+.attribution {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  color: var(--gray);
+  bottom: 10px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+.attribution a:hover {
+  color: blueviolet;
+}
