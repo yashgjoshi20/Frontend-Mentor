@@ -1,0 +1,72 @@
+body{
+    background-color:hsl(212,45%,89%);
+    text-align: center;
+    font-family: 'outfit',sans-serif; 
+}
+
+div{
+    width:18%;
+    background-color: hsl(0,0%,100%);
+    text-align: center;
+    margin:100px auto 100px auto; 
+    padding-top:  10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    border-radius: 4%;
+}
+
+img{
+    width:95%;
+    border-radius:5%;
+    margin:0px;    
+}
+
+p{
+    margin-bottom: 20px;
+    margin-top:9px;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color:hsl(220,15%,55%);
+}
+
+h3{
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 1px;
+    margin-top: 4px;
+}
+
+.attribution 
+{
+    font-size: 11px;
+    text-align: center;
+}
+  
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+
+  /* Footer */
+
+  .attribution-1 {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    color: black;
+    bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .attribution-1 a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .attribution-1 a:hover {
+    color: blueviolet;
+  }
