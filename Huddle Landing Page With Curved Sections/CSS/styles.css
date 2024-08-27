@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+body {
+    text-align: center;
+}
+
+h1, h3 {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* Navbar */
+
+.navbar {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.navbar-brand {
+    max-width: 50%;
+    text-align: initial;
+}
+
+.nav-logo {
+    width: 70%;
+}
+
+.button-nav {
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 2px 20px;
+}
+
+.button-nav:hover {
+    border: 1px solid  hsl(321, 100%, 78%);
+    color: hsl(321, 100%, 78%);
+}
+
+/* Title Page */
+
+.title-page {
+    padding: 10px 25px;
+}
+
+.title-page h1 {
+    margin: 70px auto 20px;
+}
+
+.title-button {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    padding: 10px 40px;
+}
+
+.title-button:hover, .footer-btn:hover {
+    background-color: hsl(321, 100%, 78%);
+    color: hsl(0, 0%, 100%);
+}
+
+.title-image {
+    max-width: 100%;
+    margin-top: 70px;
+    padding: 0 30px;
+}
+
+/* Statistics */
+
+#statistics {
+    margin: 100px 0 20px;
+}
+
+.stats-section {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats-heading {
+    font-family: 'Open Sans';
+    font-size: 4rem;
+    margin: 0 auto 0;
+}
+
+.stats-content {
+    margin-bottom: 30px;
+}
+
+.stats-text {
+    opacity: 0.8;
+}
+
+.stats-icon {
+    display: flex;
+    max-width: 20%;
+}
+
+
+/* Feature */
+
+.feature-image {
+    max-width: 100%;
+    padding: 0 30px;
+}
+
+.feature-text {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.content {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grow-tgt {
+    padding: 100px 0 0;
+}
+
+.colored-bg {
+    background-color: hsl(207, 100%, 98%);
+}
+
+.white-bg {
+    background-color: white;
+    margin: 100px 0;
+}
+
+.background {
+    width: 100%;
+}
+
+/* Call to Action */
+
+#cta {
+    margin: 50px 0 100px 0;
+}
+
+/* Footer */
+
+footer h3 {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer p {
+    line-height: 2;
+}
+
+
+.footer-content {
+    background-color: hsl(192, 100%, 9%);
+    color: hsl(0, 0%, 100%);
+    text-align: left;
+    padding: 0 30px;
+}
+
+.footer-btn {
+    color: hsl(0, 0%, 100%);
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 600;
+    background-color: hsl(322, 100%, 66%);
+    padding: 8px 30px;
+    float: right;
+}
+
+
+.subscribe {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    filter: brightness(1000%) saturate(0) contrast(1000%) invert(0);
+    max-width: 60%;
+    margin-bottom: 10px;
+}
+
+.contacts {
+    margin: 30px 0;
+}
+
+.footer-contact {
+    margin-bottom: 10px;
+}
+
+.contact-img {
+    padding-right: 10px;
+}
+
+.socials {
+    margin: 20px auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.socials:hover {
+    color: hsl(192, 98%, 42%);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--dark-gray);
+  }
+  
+  .attribution a:hover {
+    color: var(--black);
+  }
+
+@media (min-width: 893px) {
+
+    h1, h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    } 
+
+    /* Navbar */
+    
+    .navbar {
+        padding: 30px;
+    }
+
+    .navbar {
+        padding: 30px;
+    }
+
+    .button-nav {
+        font-size: 0.9rem;
+    }
+
+    /* Title Page */
+
+    .title-page p {
+        padding: 0 33%;
+    }
+    
+    /* Statistics */
+
+    .stats-heading {
+        font-size: 5rem;
+    }
+
+    /* Statistics */
+
+    .stats-heading {
+        font-size: 5rem;
+    }
+
+    /* Features */
+
+    .content {
+        padding: 0 100px;
+    }
+
+    .feature-text {
+        text-align: left;
+    }
+
+    .feature-image {
+        max-width: 100%;
+    }
+
+    .colored-bg p {
+        padding-right: 20%;
+    }
+
+    .white-bg .feature-text {
+        padding-left: 10%;
+    }
+
+    /* Footer */
+
+    .footer-content {
+        padding: 100px;
+        text-align: left;
+    }
+
+    .footer-btn {
+        float: none;
+    }
+
+    .feature-logo {
+        margin-bottom: 5px;
+    }
+
+    .contacts {
+        margin-top: 0;
+    }
+
+    .contacts p, .subscribe p{
+        padding-right: 40%;
+    }
+
+    .subscribe h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+}
