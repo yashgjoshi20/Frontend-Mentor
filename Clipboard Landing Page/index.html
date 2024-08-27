@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <title>Frontend Mentor | Clipboard landing page</title>
+  </head>
+
+  <body>
+    <main class="flex flex-column">
+      
+      <!-- A History Of Everything  -->
+      <section class="flex flex-column hero">
+        <img src="images/logo.svg" alt="Clipboard logo" class="hero-logo" />
+        <div class="hero-content">
+          <h1 class="hero-title">A history of everything you copy</h1>
+          <p class="hero-text">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+        </div>
+        <form class="flex responsive-flex">
+          <button type="button" class="ios-button">Download for iOS</button>
+          <button type="button" class="mac-button">Download for Mac</button>
+        </form>
+      </section>
+      
+      <!-- Keep Track Of Your Snippets -->
+      <section class="flex flex-column snippets">
+        <div class="snippets-content">
+          <h2 class="snippets-title">Keep track of your snippets</h2>
+          <p class="snippets-text">
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
+        <div class="snippets-grid">
+          <img
+            src="images/image-computer.png"
+            alt="Computer illustration"
+            aria-hidden="true"
+            class="illustration"
+          />
+          <ul class="flex flex-column list">
+            <li class="list-item">
+              <h3>Quick Search</h3>
+              <p>
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </li>
+            <li class="list-item">
+              <h3>iCloud Sync</h3>
+              <p>Instantly saves and syncs snippets across all your devices.</p>
+            </li>
+            <li class="list-item">
+              <h3>Complete History</h3>
+              <p>
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Access Clipboard Anywhere -->
+      <section class="flex flex-column access">
+        <div class="access-content">
+          <h2 class="access-title">Access Clipboard Anywhere</h2>
+          <p class="access-text">
+            Whether you’re on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks.
+          </p>
+        </div>
+        <img
+          src="images/image-devices.png"
+          alt="Clipboard app in devices illustration"
+          class="illustration"
+        />
+      </section>
+
+      <!-- Supercharge Your Workflow -->
+      <section class="flex flex-column supercharge">
+        <div class="supercharge-content">
+          <h2 class="supercharge-title">Supercharge Your Workflow</h2>
+          <p class="supercharge-text">
+            We’ve got the tools to boost your productivity.
+          </p>
+        </div>
+        <ul class="flex responsive-flex list">
+          <li class="list-item">
+            <img
+              src="images/icon-blacklist.svg"
+              alt="Blacklist Icon"
+              aria-hidden="true"
+            />
+            <h3>Create blacklists</h3>
+            <p>
+              Ensure sensitive information never makes its way to your clipboard
+              by excluding certain sources.
+            </p>
+          </li>
+          <li class="list-item">
+            <img
+              src="images/icon-text.svg"
+              alt="Text Icon"
+              aria-hidden="true"
+            />
+            <h3>Plain text snippets</h3>
+            <p>
+              Remove unwanted formatting from copied text for a consistent look.
+            </p>
+          </li>
+          <li class="list-item">
+            <img
+              src="images/icon-preview.svg"
+              alt="Preview Icon"
+              aria-hidden="true"
+            />
+            <h3>Sneak preview</h3>
+            <p>
+              Quick preview of all snippets on your Clipboard for easy access.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Brand Logos -->
+      <figure class="flex responsive-flex brands">
+        <img
+          src="images/logo-google.png"
+          alt="Google logo"
+          aria-hidden="true"
+        />
+        <img src="images/logo-ibm.png" alt="IBM logo" aria-hidden="true" />
+        <img
+          src="images/logo-microsoft.png"
+          alt="Microsoft logo"
+          aria-hidden="true"
+        />
+        <img src="images/logo-hp.png" alt="HP logo" aria-hidden="true" />
+        <img
+          src="images/logo-vector-graphics.png"
+          alt="Vector Graphics logo"
+          aria-hidden="true"
+        />
+      </figure>
+      
+      <!-- Clipboard for iOS and Mac OS  -->
+      <section class="flex flex-column clipboard">
+        <div class="clipboard-content">
+          <h2 class="clipboard-title">Clipboard for iOS and Mac OS</h2>
+          <p class="clipboard-text">
+            Available for free on the App Store. Download for Mac or iOS, sync
+            with iCloud and you’re ready to start adding to your clipboard.
+          </p>
+        </div>
+        <form class="flex responsive-flex">
+          <button type="button" class="ios-button">Download for iOS</button>
+          <button type="button" class="mac-button">Download for Mac</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="flex responsive-flex">
+      <div class="footer-content flex responsive-flex">
+        <a href="#" aria-label="Scroll up to hero section">
+          <img src="images/logo.svg" alt="Clipboard Logo" class="footer-logo" />
+        </a>
+        
+        <!-- Links -->
+        <ul class="links">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Install Guide</a></li>
+        </ul>
+
+        <!-- Social Media Icons -->
+        <ul class="flex socials">
+          <li>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              class="fa-brands fa-square-facebook"
+              aria-label="Facebook Icon"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              class="fa-brands fa-twitter"
+              aria-label="Twitter Icon"
+            >
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              class="fa-brands fa-instagram"
+              aria-label="Instagram Icon"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/25fee3ea99.js" crossorigin="anonymous" ></script>
+  </body>
+</html>
